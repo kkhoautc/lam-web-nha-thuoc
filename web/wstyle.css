@@ -2,57 +2,166 @@
     *{
         box-sizing: border-box;
     }
-    @media only screen and (min-width: 600px) {
-        /* For tablets: */
-        .col-s-1 {width: 8.33%;}
-        .col-s-2 {width: 16.66%;}
-        .col-s-3 {width: 25%;}
-        .col-s-4 {width: 33.33%;}
-        .col-s-5 {width: 41.66%;}
-        .col-s-6 {width: 50%;}
-        .col-s-7 {width: 58.33%;}
-        .col-s-8 {width: 66.66%;}
-        .col-s-9 {width: 75%;}
-        .col-s-10 {width: 83.33%;}
-        .col-s-11 {width: 91.66%;}
-        .col-s-12 {width: 100%;}
-      }
-      @media only screen and (min-width: 768px) {
-        /* For desktop: */
-        .col-1 {width: 8.33%;}
-        .col-2 {width: 16.66%;}
-        .col-3 {width: 25%;}
-        .col-4 {width: 33.33%;}
-        .col-5 {width: 41.66%;}
-        .col-6 {width: 50%;}
-        .col-7 {width: 58.33%;}
-        .col-8 {width: 66.66%;}
-        .col-9 {width: 75%;}
-        .col-10 {width: 83.33%;}
-        .col-11 {width: 91.66%;}
-        .col-12 {width: 100%;}
-      }
-      [class*="col-"] {
-        float: left;
-        padding: 15px;
-      }
-    .down{
-        background-color: rgb(233, 238, 242);
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+
     }
-    .down img{
-        width: 7%;
+    .header{
+        background-color: #0096d6;
+        padding: 20px;
+    }
+    .logo{
+        width: 50%;
         height: auto;
-        padding-left: 3%;
+        padding: 0;
+        align-self: center;
     }
-    .down p{
-        width: ;
+    .search-bar {
+        width: 60%;
+        align-items: center;
+        display: flex;
+        margin: 0 20px;
     }
-    a:hover{
-        color:red
+    .noti{
+        width: 30px;
+        margin-left: 20px;
+        padding: 0;
+    }
+    .search-input {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+    }
+    .search-btn {
+        padding: 10px 20px;
+        background-color: #007bbd;
+        color: white;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+    .search-btn:hover {
+        background-color: #005f8a;
+    }
+    .auth-buttons {
+        display: flex;
+        align-items: center;
+        float: right;
+    }
+    
+    .auth-btn {
+        background-color: #fff;
+        color: #0096d6;
+        border: 1px solid #fff;
+        padding: 10px 20px;
+        margin-left: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s, color 0.3s;
+    }
+    
+    .auth-btn:hover {
+        background-color: #0096d6;
+        color: white;
+        border: 1px solid #0096d6;
+    }
+    .nav{
+        background-color: rgb(75, 107, 214);
+        color: white;
+        padding: 10px 0;
+    }
+    .nav .menu{
+        display:flex;
+        align-items: center;
+    }
+    .nav .menu a{
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+    .banner{
+        display: table;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin :0 auto;
+        padding: 0 20px;
+    }
+    .banner img{
+        border-radius: 10px;
+        float: left;
+    }
+    .categories{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .categories .category{
+        text-align: center;
+        width: 100px;
+    }
+    .categories .category img{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .categories .category p{
+        font-size: 14px;
+        margin: 0;
+    }
+    .flashsale{
+        background-image:url(bg.jpg);
+        
+    }
+    .flashsale .fcontainer{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 
-
-
-
-
+    .flashsale .fcontainer .fsale{
+        display: inline;
+        text-align: center;
+        width: 150px;
+        border: 1px solid white;
+        border-radius: 20px;
+        margin: 10px;
+        float: left;
+    }
+    .flashsale .fcontainer img{
+        float: left;
+    }
+    .flashsale .fcontainer .fsale img{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+    }
+    .flashsale .fcontainer .fsale p{
+        font-size: 14px;
+        margin: 0;
+    }
+    .flashsale .fcontainer .fsale button{
+        margin: 10px;
+        background-color: aqua;
+        border-radius: 10px;
+    }
+    .ilp{
+        color: #515658ef;
+        text-decoration:line-through;
+    }
 </style>
